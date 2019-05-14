@@ -31,11 +31,11 @@ export default new VueRouter({
             children: [
                 resolveView("/index/login", "/Login", import('../pages/Login.vue')),
                 resolveView("/item/category", '/item/Category', import('../pages/home/index.vue')),
-                resolveView("/item/brand", '/item/Brand', import('../pages/home/index.vue')),
+                resolveView("/item/brand", '/item/Brand', import('../pages/Login.vue')),
                 resolveView("/item/list", '/item/Goods', import('../pages/home/index.vue')),
-                resolveView("/item/specification", '/item/specification/Specification', import('../pages/home/index.vue')),
+                resolveView("/item/specification", '/item/specification/Specification', import('../pages/Login.vue')),
                 resolveView("/user/statistics", '/item/Statistics', import('../pages/home/index.vue')),
-                resolveView("/trade/promotion", '/trade/Promotion', import('../pages/home/index.vue'))
+                resolveView("/trade/promotion", '/trade/Promotion', import('../pages/Login.vue'))
             ]
         },
     ]

@@ -1,12 +1,12 @@
 <template>
     <section :class="cname">
         <swiper :options="options" :not-next-tick="options.notNextTick">
-            <swiper-slide v-for="item in items" :key="item.href">
+            <swiper-slide v-for="item in items">
                 <router-link :to="{name:item.href}">
                     <img :src="item.src" alt="">
                 </router-link>
             </swiper-slide>
-            <div class="swiper-pagination" v-if="options.pagination" slot="pagination"/>
+            <div class="swiper-pagination" v-if="options.pagination" slot="pagination"></div>
         </swiper>
     </section>
 </template>

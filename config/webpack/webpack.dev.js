@@ -24,6 +24,9 @@ module.exports = smart(base, {
         compress: true,
         //服务占用的端口
         port: 966,
+        historyApiFallback:{
+            index:'/index.html'
+        },
         //1.我们前端只想来模拟数据。
         // before(app){//提供的一个方法
         //     app.get('/api/user', (req, res) => {
